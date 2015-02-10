@@ -54,7 +54,7 @@ def _get_secgroup_id(module, nova):
         secgroup = nova.security_groups.find(name=module.params['name'])
     except Exception as e:
         module.fail_json(msg="Error in getting the security group ID: %s" % e.message)
-    module.exit_json(changed=False, result=dict(id=secgroup.id))
+    module.exit_json(changed=False, id=secgroup.id)
 
 def main():
     """
