@@ -6,7 +6,7 @@ Retrieve the ID of a named security group
 License
 -------
 
-GPLv3
+MIT
 
 Author Information
 ------------------
